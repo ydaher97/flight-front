@@ -348,7 +348,7 @@ apiParamsForm.addEventListener('submit', async (event) => {
     const formData = new FormData(apiParamsForm);
 
     try {
-        const response = await fetch('http://localhost:8000/search', {
+        const response = await fetch(''https://flight-back-q7bk.onrender.com/search', {
             method: 'POST',
             body: JSON.stringify(Object.fromEntries(formData)),
             headers: {
