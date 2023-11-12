@@ -16,7 +16,7 @@ const apiFlights = []
 
 const getflights = async () => {
     try {
-        const response = await fetch('http://localhost:8000/flight');
+        const response = await fetch('https://flight-back-q7bk.onrender.com/flight');
         const flights = await response.json();
 
         // Clear the existing flight data in flightsSearch
